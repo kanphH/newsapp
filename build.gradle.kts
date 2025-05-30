@@ -3,4 +3,5 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android) apply false
     alias(libs.plugins.jetbrainsKotlinSerialization) apply false
     alias(libs.plugins.ksp) apply false
+    alias(libs.plugins.gms.google.services) apply false
 }

@@ -1,4 +1,4 @@
-package kan.kpo.newsapp.news.presentation.ui
+package kan.kpo.newsapp.presentation.ui
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
@@ -6,10 +6,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import kan.kpo.newsapp.news.presentation.NewState
-import kan.kpo.newsapp.news.presentation.NewsAction
-import kan.kpo.newsapp.news.presentation.NewsViewModel
-import kan.kpo.newsapp.news.presentation.theme.NewsAppTheme
+import kan.kpo.newsapp.presentation.NewState
+import kan.kpo.newsapp.presentation.NewsAction
+import kan.kpo.newsapp.presentation.NewsViewModel
+import kan.kpo.newsapp.theme.NewsAppTheme
 import org.koin.androidx.compose.koinViewModel
 
 

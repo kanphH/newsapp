@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.jetbrainsKotlinSerialization)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.gms.google.services)
 }
 
 
@@ -64,6 +65,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.firebase.firestore.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -97,4 +99,20 @@ dependencies {
     implementation("androidx.core:core-splashscreen:1.0.1")
 
     implementation("androidx.compose.ui:ui-text-google-fonts")
+
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.auth.ktx)
+
+    // ใช้เวอร์ชันเสถียรล่าสุด
+    implementation (libs.androidx.credentials)
+
+    // สำหรับรองรับ Play Services บนอุปกรณ์ที่ใช้ Android 13 หรือต่ำกว่า (ไม่บังคับ)
+    implementation ("androidx.credentials:credentials-play-services-auth:1.2.2")
+
+
+// ✅ สำหรับ ViewModel โดยเฉพาะ
+
+
+
+
 }

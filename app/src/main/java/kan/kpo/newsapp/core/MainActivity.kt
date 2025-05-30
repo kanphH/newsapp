@@ -16,10 +16,12 @@ import androidx.navigation.compose.composable
 
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
-import kan.kpo.newsapp.news.presentation.Screens
+import kan.kpo.newsapp.presentation.Screens
 
 
-import kan.kpo.newsapp.news.presentation.theme.NewsAppTheme
+import kan.kpo.newsapp.theme.NewsAppTheme
+import kan.kpo.newsapp.presentation.ui.auth.login.signup.SignUpScreen
+import kan.kpo.newsapp.presentation.ui.auth.signin.SignInScreen
 
 
 class MainActivity : ComponentActivity() {
@@ -31,6 +33,8 @@ class MainActivity : ComponentActivity() {
             NewsAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { paddingValues ->
                     Navigation(modifier = Modifier.padding(paddingValues))
+
+                    SignUpScreen()
                 }
 
 
@@ -53,7 +57,7 @@ fun Navigation(modifier: Modifier = Modifier) {
 
         }
         composable<Screens.Article> { backStackEntry ->
-            val article:Screens.Article = backStackEntry.toRoute()
+            val article: Screens.Article = backStackEntry.toRoute()
             article.articleId
 
 

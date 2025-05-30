@@ -1,4 +1,4 @@
-package kan.kpo.newsapp.news.presentation
+package kan.kpo.newsapp.presentation
 
 import kan.kpo.newsapp.core.data.domain.Article
 

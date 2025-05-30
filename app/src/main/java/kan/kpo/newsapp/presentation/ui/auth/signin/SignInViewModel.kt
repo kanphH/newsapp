@@ -1,4 +1,4 @@
-package kan.kpo.newsapp.news.presentation.ui.auth.signin
+package kan.kpo.newsapp.presentation.ui.auth.signin
 
 import android.util.Log
 import androidx.lifecycle.ViewModel

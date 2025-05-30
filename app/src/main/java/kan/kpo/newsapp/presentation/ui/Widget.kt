@@ -1,4 +1,4 @@
-package kan.kpo.newsapp.news.presentation.ui
+package kan.kpo.newsapp.presentation.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -38,9 +38,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kan.kpo.newsapp.R
 
-import kan.kpo.newsapp.news.presentation.theme.BluePrimary
-import kan.kpo.newsapp.news.presentation.theme.CyanText
-import kan.kpo.newsapp.news.presentation.theme.NewsAppTheme
+import kan.kpo.newsapp.theme.BluePrimary
+import kan.kpo.newsapp.theme.CyanText
+import kan.kpo.newsapp.theme.NewsAppTheme
 
 @Composable
 fun GroupSocialButton(
@@ -69,7 +69,7 @@ fun GroupSocialButton(
             Text(text = text)
             Spacer(modifier = Modifier.padding(start = 10.dp))
             Text(
-                text = "Sign up",
+                text = "Sign In",
                 color = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.clickable { },
                 style = MaterialTheme.typography.titleMedium

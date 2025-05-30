@@ -1,4 +1,4 @@
-package kan.kpo.newsapp.news.presentation
+package kan.kpo.newsapp.presentation
 
 import kotlinx.serialization.Serializable
 

@@ -1,4 +1,4 @@
-package kan.kpo.newsapp.news.presentation.ui.auth.login.signup
+package kan.kpo.newsapp.presentation.ui.auth.login.signup
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -14,11 +14,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import kan.kpo.newsapp.news.presentation.theme.BluePrimary
-import kan.kpo.newsapp.news.presentation.theme.GrayText
-import kan.kpo.newsapp.news.presentation.theme.NewsAppTheme
-import kan.kpo.newsapp.news.presentation.ui.GroupSocialButton
-import kan.kpo.newsapp.news.presentation.ui.NewsAppTextField
+import kan.kpo.newsapp.theme.BluePrimary
+import kan.kpo.newsapp.theme.GrayText
+import kan.kpo.newsapp.theme.NewsAppTheme
+import kan.kpo.newsapp.presentation.ui.GroupSocialButton
+import kan.kpo.newsapp.presentation.ui.NewsAppTextField
 
 @Composable
 fun SignUpScreen(modifier: Modifier = Modifier) {
